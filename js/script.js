@@ -9,8 +9,6 @@ burger.addEventListener('click', () => {
     backdrop.classList.toggle('show-backdrop')
 })
 
-
-
 // modal
 
 const apply = document.querySelector('.apply')
