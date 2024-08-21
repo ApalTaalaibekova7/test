@@ -1,0 +1,136 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+section {
+    padding: 200px 0;
+    height: 1000px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 20px 0;
+    background-color: rgb(44, 216, 216);
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav img {
+    width: 100px;
+}
+
+.nav{
+    display: flex;
+    column-gap: 30px;
+    font-size: 20px;
+}
+
+.header__nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+/* main */
+#main{
+    background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg');
+    height: 100vh;
+    background-size: cover;
+    color: white;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.main__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.main__wrap p {
+    font-size: 20px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+.main__wrap button {
+    padding: 10px 20px;
+    transition: .3s;
+}
+
+.main__wrap button:hover {
+    opacity: 1;
+}
+
+
+/* main */
+
+.accrodion__name {
+    padding: 20px;
+    background-color: rgb(44, 216, 216);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+}
+
+.accrodion__content {
+    padding: 10px 20px;
+    overflow: hidden;
+    max-height: 0;
+    transition: .2s ease-in-out;
+}
+
+.accrodion__content p {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+
+
+.accrodion__wrap.accordion__active .accrodion__content{
+    max-height: 1000px;
+    transition: .5s ease-in;
+}
+
+.accrodion__wrap.accordion__active .plus {
+    transform: rotate(45deg);
+}
+
